@@ -127,3 +127,26 @@ form textarea {
 form label span {
     margin-bottom: 10px;
 }
+
+/* profiles list */
+.profiles__links {
+  display: block;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+  text-decoration: none;
+}
+
+.profiles__links:hover p {
+  color: var(--primary);
+}
+
+.profiles p {
+  margin: 0;
+}
+
+.profiles__station {
+  font-size: 0.8em;
+  color: #bbb;
+}
