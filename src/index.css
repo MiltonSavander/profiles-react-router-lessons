@@ -30,3 +30,34 @@ button {
   background: var(--primary);
   cursor: pointer;
 }
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  max-width: 1200px;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+.nav-link.active {
+  background: var(--primary);
+  color: var(--dark);
+
+}
+
+.logo {
+  width: 100px;
+  object-fit: contain;
+}
+/* end navbar */
