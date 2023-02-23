@@ -8,7 +8,7 @@ export default function Profile() {
             {careers.map((career) => (
                 <Link
                     className="profiles__links"
-                    to={'/'}
+                    to={career.id.toString()}
                     key={career.id}
                 >
                     <p>{career.name}</p>
