@@ -23,5 +23,8 @@ export default function ProfilDetails() {
 export const profilDetailsLoader = async ({ params }) => {
     const { id } = params
     const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+    if (!res.ok) {
+        throw Error('Kunde inte hitta den profilen.')
+    }
     return res.json()
 }

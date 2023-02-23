@@ -16,6 +16,7 @@ import Profile, { profileLoader } from './pages/profiles/Profile'
 import ProfilDetails, {
     profilDetailsLoader,
 } from './pages/profiles/ProfilDetails'
+import ProfileError from './pages/profiles/ProfileError'
 
 // layouts
 import RootLayout from './layouts/RootLayout'
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
             <Route
                 path="profiles"
                 element={<ProfileLayout />}
+                errorElement={<ProfileError />}
             >
                 <Route index element={<Profile />} loader={profileLoader} />
                 <Route
